@@ -1,0 +1,158 @@
+/*
+mainbluetheme:#00BCD4
+mainYellowTheme:#FFEB3B
+sideMenuTheeme:#757575
+*/
+.navbar-header{
+    width: auto !important;
+    float: left;
+}
+.navbar-brand>span {
+    font-size: 0.7em;
+}
+.navbar .navbar-toggle {
+    border: 0;
+    top: 0;
+    position: fixed;
+    left: 59%;
+    display: block;
+}
+.filterBadge{
+        right: 15%;
+    top: 26px;
+}
+.navbar{
+    margin-bottom: 0 !important;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 300px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Stay on top */
+    top: 0;
+    right: -300px;
+       background-color: #eee;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-right .5s;
+    padding: 20px;
+}
+.headWrapSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.langImg>img{
+    width: 80%;
+}
+div.codTitle {
+    color: #009688;
+   font-size: 1.3em;
+    font-weight: bold;
+}
+.sourceCodeWrap {
+       width: 100%;
+    height: 200px;
+    overflow: auto;
+    padding: 2%;
+    background: #EEE;
+    color: #000;
+    position: relative;
+}
+.sourceCode {
+    position: relative;
+}
+/*
+.codeInfo {
+    position: absolute;
+    top: 5%;
+        right: 5% !important;
+    color: #000;
+}
+*/
+.codeInfo {
+    padding: 2%;
+}
+.codeInfo>span {
+    display: inline;
+}
+.filterBadge{
+    z-index: 9;
+}
+.blockDisplay>label {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 5%;
+}
+#filterSelection>h2,#InfoPart>h2 {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    padding: 4%;
+    background: #009688;
+    color: white;
+    margin: 0;
+}
+.checkbox label{
+    color: #565656 !important;
+        font-size: 1em !important;
+}
+.actWrap {
+    padding: 0 4%;
+    width: 92%;
+}
+.actWrap>h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}
+.actWrap>table
+{
+    width: 100%;
+}
+.actWrap>table td:first-child {
+    text-align: left;
+    width: auto;
+}
+.fixPagination {
+/*
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+*/
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
