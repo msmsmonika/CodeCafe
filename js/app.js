@@ -128,7 +128,7 @@
         }
         $http({
             method: 'GET',
-            url: 'http://hackerearth.0x10.info/api/ctz_coders?type=json&query=list_compiler_image'
+            url: 'https://hackerearth.0x10.info/api/ctz_coders?type=json&query=list_compiler_image'
         }).then(function successCallback(response) {
             console.log(response);
             $.each(response.data, function (l, imgInfo) {
@@ -149,7 +149,7 @@
             var pg1 = i;
             $http({
                 method: 'GET',
-                url: 'http://hackerearth.0x10.info/api/ctz_coders?type=json&query=list_submissions&page=' + i
+                url: 'https://hackerearth.0x10.info/api/ctz_coders?type=json&query=list_submissions&page=' + i
             }).then(function successCallback(response) {
                 var pg2 = pg1;
                 $.each(response.data.websites, function (k, codeInfo) {
